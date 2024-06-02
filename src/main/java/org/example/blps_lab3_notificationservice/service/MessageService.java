@@ -22,7 +22,7 @@ public class MessageService {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setFrom(from);
         mailMessage.setTo(message.getTo());
-        mailMessage.setSubject(message.getText());
+        mailMessage.setSubject(message.getTheme());
         mailMessage.setText(message.getText());
 
         javaMailSender.send(mailMessage);
