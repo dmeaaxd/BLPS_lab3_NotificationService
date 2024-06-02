@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import org.example.blps_lab3_notificationservice.dto.MessageDTO;
 import org.example.blps_lab3_notificationservice.entity.Message;
 import org.example.blps_lab3_notificationservice.service.MessageService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.MailException;
