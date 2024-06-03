@@ -16,9 +16,6 @@ public class MessageService {
     private String from;
 
     public void sendMessage(Message message) throws MailException {
-        System.out.println(from);
-
-
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setFrom(from);
         mailMessage.setTo(message.getTo());
