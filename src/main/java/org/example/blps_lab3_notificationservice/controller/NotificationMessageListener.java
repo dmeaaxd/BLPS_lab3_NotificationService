@@ -23,6 +23,7 @@ public class NotificationMessageListener {
     public void receiveNotificationMessage(TextMessage textMessage) throws Exception {
 
         MessageDTO messageDTO = convertTextMessageToObject(textMessage.getText(), MessageDTO.class);
+        System.out.println(messageDTO);
 
         try {
             messageService.sendMessage(Message.builder()
